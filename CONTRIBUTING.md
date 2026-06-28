@@ -6,8 +6,8 @@ to set up a development environment and submit changes.
 ## Quick start
 
 ```bash
-git clone https://github.com/Mohamed-Khaled/HillCipher.git
-cd HillCipher
+git clone https://github.com/mmohamedkhaled/hill-cipher.git
+cd hill-cipher
 make          # build the CLI
 make test     # unit tests + regression suite
 ```

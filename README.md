@@ -1,6 +1,6 @@
 # Hill Cipher
 
-[![CI](https://github.com/Mohamed-Khaled/HillCipher/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohamed-Khaled/HillCipher/actions/workflows/ci.yml)
+[![CI](https://github.com/mmohamedkhaled/hill-cipher/actions/workflows/ci.yml/badge.svg)](https://github.com/mmohamedkhaled/hill-cipher/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C.svg)](https://en.cppreference.com/w/cpp/17)
 
@@ -60,8 +60,8 @@ attack** that recovers the key.
 ## Build
 
 ```bash
-git clone https://github.com/Mohamed-Khaled/HillCipher.git
-cd HillCipher
+git clone https://github.com/mmohamedkhaled/hill-cipher.git
+cd hill-cipher
 make
 ```
 
