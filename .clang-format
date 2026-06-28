@@ -1,0 +1,53 @@
+# clang-format configuration for the Hill cipher project.
+# Tuned to match the existing hand-written style (4-space indent, attached
+# braces, left-aligned pointers/refs). Run `clang-format -i src/*.cpp
+# include/*.hpp tests/*.cpp` to apply, or rely on the CI format check.
+#
+# NOTE: pinned to keys understood by clang-format >= 14.
+
+BasedOnStyle: LLVM
+
+Language: Cpp
+Standard: c++17
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+NamespaceIndentation: None
+
+# Line length: existing code comfortably fits within 100.
+ColumnLimit: 100
+
+# Braces & control flow
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
+
+# Pointers / references
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpaceBeforeSquareBrackets: false
+SpaceAfterCStyleCast: false
+BitFieldColonSpacing: Both
+
+# Alignment (kept conservative to avoid churn)
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: true
+AlignTrailingComments: true
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+
+# Misc
+AlwaysBreakTemplateDeclarations: Yes
+FixNamespaceComments: true
+SortIncludes: CaseSensitive

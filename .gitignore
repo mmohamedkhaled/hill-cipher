@@ -1,0 +1,21 @@
+# Build artifacts (anchored to repo root so they never shadow a real file)
+/hillcipher
+/test_hillcipher
+*.o
+*.obj
+*.exe
+
+# CMake build directories
+/build/
+/build-*/
+out/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

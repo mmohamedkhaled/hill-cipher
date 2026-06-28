@@ -1,0 +1,27 @@
+# clang-tidy configuration for the Hill cipher project.
+# Intended for local use (`run-clang-tidy`); not wired into CI as a hard gate
+# to keep the barrier low for first-time contributors. Focused on correctness
+# and modernization, with noisy checks disabled.
+
+Checks: >
+  -*,
+  bugprone-*,
+  performance-*,
+  modernize-use-override,
+  modernize-use-using,
+  modernize-redundant-void-arg,
+  modernize-deprecated-headers,
+  modernize-loop-convert,
+  modernize-use-nullptr,
+  readability-*,
+  -bugprone-easily-swappable-parameters,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -readability-named-parameter,
+  -readability-implicit-bool-conversion,
+  -modernize-use-trailing-return-type,
+  -readability-function-cognitive-complexity
+
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*/include/.*'
+FormatStyle: file
